@@ -7,38 +7,45 @@
           <input type="number" class="form-control" id="txtPassaporte" placeholder="Passaporte" min="0">
         </span>
       </div>
-
       <div class="form-group">
-        <span tabindex="0" data-toggle="tooltip" title="Valor total sujo">
+        <span tabindex="1" data-toggle="tooltip" title="Valor total sujo">
           <label for="lblValorTotal">Valor Total</label>
           <input type="number" class="form-control" id="txtVlrTotal" placeholder="Total" min="0">
         </span>
       </div>
       <div class="form-group">
-        <span tabindex="0" data-toggle="tooltip" title="Valor a ser guardado no Baú">
+        <span data-toggle="tooltip" title="Valor a ser guardado no Baú">
           <label for="lblValorBau">Valor Baú</label>
           <input type="number" class="form-control" id="txtVlrBau" placeholder="Baú" disabled>
         </span>
       </div>
       <div class="form-group">
-        <span tabindex="0" data-toggle="tooltip" title="Valor a ser entregue ao Cliente">
+        <span data-toggle="tooltip" title="Valor a ser entregue ao Cliente">
           <label for="lblValorCliente">Valor Cliente</label>
           <input type="number" class="form-control" id="txtVlrCliente" placeholder="Cliente" disabled>
         </span>
       </div>
       <div class="form-group">
-        <span tabindex="0" data-toggle="tooltip" title="Sua parte do dinheiro">
+        <span data-toggle="tooltip" title="Sua parte do dinheiro">
           <label for="lblValorMec">Valor Mecânico</label>
           <input type="number" class="form-control" id="txtVlrMec" placeholder="Mecânico" disabled>
         </span>
+        <span tabindex="2" data-toggle="tooltip" title="Só marcar esta opção se você for Booster no nosso Discord.">
+          <input class="form-check-input" type="checkbox" value="" id="chkBoosterMec">
+          <label class="form-check-label" for="lblBooster">
+            Booster
+          </label>
+        </span>
       </div>
       <div class="form-group">
+        <span tabindex="3" data-toggle="tooltip" title="Só marcar esta opção caso o cliente dizer ser parceiro (verificar canal parceiros).">
         <label for="lblParceria">Parceria</label>
         <select class="form-control" id="txtParceria">
           <option value="0">Sem Parceria</option>
-          <option value="1">Com Parceria</option>
+          <option value="1">Parceiro</option>
           <option value="2">Aliança</option>
         </select>
+      </span>
       </div>
       <div class="form-group">
         <button type="button" class="btn btn-success" id="Calcular">Calcular</button>
