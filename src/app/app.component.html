@@ -1,38 +1,38 @@
 <div class="wrapper fadeInDown">
   <div id="formContent">
-    <form>
-      <img src="https://giphy.com/embed/Vk0foG0izDUXu" width="200" frameBorder="0">
+    <form [formGroup]="calcForm" >
+      <iframe src="../imagens/argentina.gif" width="200" frameBorder="0"></iframe>
       <div class="form-group">
         <span tabindex="0" data-toggle="tooltip" title="Passaporte da pessoa que trouxe o veículo">
           <label for="lblPassaporte">Passaporte Cliente</label>
-          <input type="number" class="form-control" id="txtPassaporte" placeholder="Passaporte" min="0">
+          <input required type="number" class="form-control" id="txtPassaporte" placeholder="Passaporte" min="0" formControlName="Passaporte">
         </span>
       </div>
       <div class="form-group">
         <span tabindex="1" data-toggle="tooltip" title="Valor total sujo">
           <label for="lblValorTotal">Valor Total</label>
-          <input type="number" class="form-control" id="txtVlrTotal" placeholder="Total" min="0">
+          <input type="number" class="form-control" id="txtVlrTotal" placeholder="Total" min="0" formControlName="ValorTotal">
         </span>
       </div>
       <div class="form-group">
         <span data-toggle="tooltip" title="Valor a ser guardado no Baú">
           <label for="lblValorBau">Valor Baú</label>
-          <input class="form-control" id="txtVlrBau" placeholder="Baú" disabled>
+          <input class="form-control" id="txtVlrBau" placeholder="Baú" formControlName="ValorBau">
         </span>
       </div>
       <div class="form-group">
         <span data-toggle="tooltip" title="Valor a ser entregue ao Cliente">
           <label for="lblValorCliente">Valor Cliente</label>
-          <input class="form-control" id="txtVlrCliente" placeholder="Cliente" disabled>
+          <input class="form-control" id="txtVlrCliente" placeholder="Cliente" formControlName="ValorCliente">
         </span>
       </div>
       <div class="form-group">
         <span data-toggle="tooltip" title="Sua parte do dinheiro">
           <label for="lblValorMec">Valor Mecânico</label>
-          <input class="form-control" id="txtVlrMec" placeholder="Mecânico" disabled>
+          <input class="form-control" id="txtVlrMec" placeholder="Mecânico" formControlName="ValorMecanico">
         </span>
-        <span tabindex="2" data-toggle="tooltip" title="Só marcar esta opção se você for Booster no nosso Discord.">
-          <input class="form-check-input" type="checkbox" value="" id="chkBoosterMec">
+        <span tabindex="2" data-toggle="tooltip" title="Só marcar esta opção se você for Booster no nosso Discord. O mau uso é passível de exoneração (Lembre-se verificamos sempre as logs e sua meta).">
+          <input class="form-check-input" type="checkbox" value="" id="chkBoosterMec" formControlName="Booster">
           <label class="form-check-label" for="lblBooster">
             Booster
           </label>
@@ -41,17 +41,23 @@
       <div class="form-group">
         <span tabindex="3" data-toggle="tooltip"
           title="Só marca esta opção caso o cliente informar ser parceiro (verificar canal parceiros).">
-          <label for="lblParceria">Parceria</label>
-          <select class="form-control" id="txtParceria">
+          <label for="lblParceria" >Parceria</label>
+          <select class="form-control" id="txtParceria" formControlName="Parceria">
             <option value="0">Sem Parceria</option>
             <option value="1">Parceiro</option>
             <option value="2">Aliança</option>
           </select>
         </span>
       </div>
-      <div class="form-group">
-        <button type="button" class="btn btn-success" id="Calcular">Calcular</button>
-        <button type="button" class="btn btn-danger" id="Limpar">Limpar</button>
+      <div class="form-group" >
+        <div class="btn-toolbar mx-auto d-block" role="toolbar" style="text-align: right;">
+          <div class="btn-group mr-2" role="group" >
+            <button type="button" class="btn btn-success mx-auto d-block" id="Calcular" (click)="CalcularValores()">Calcular</button>
+          </div>
+          <div class="btn-group mr-2" role="group">
+            <button type="button" class="btn btn-danger mx-auto d-block" id="Limpar">Limpar</button>
+          </div>
+        </div>
       </div>
     </form>
   </div>
