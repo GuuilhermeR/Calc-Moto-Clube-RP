@@ -28,11 +28,6 @@ h2.inactive {
   color: cyan;
 }
 
-h2.active {
-  color: cyan;
-  border-bottom: 2px solid #5fbae9;
-}
-
 label {
   color: white
 }
