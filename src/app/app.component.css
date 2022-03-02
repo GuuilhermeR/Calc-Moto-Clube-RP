@@ -1,8 +1,8 @@
-/* body{
+ body{
   padding-top:1rem;
   padding-bottom:1rem;
   background:rgba(0, 0, 0, 0.76);
-  } */
+  }
 
 h1,h2,h3, label{
   font-family: 'Kaushan Script', cursive;
@@ -11,51 +11,11 @@ h1,h2,h3, label{
 
 input,select{
   font-family: 'Kaushan Script', cursive;
-  color: #0d0d0d;
-}
-
-html, body{
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top:1rem;
-  padding-bottom:1rem;
-  height: 100%;
-  width: 100%;
-  font-family: 'Numans', sans-serif;
-}
-
-.card{
-  height: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 450px;
-  background-color: rgba(0,0,0,0.5) !important;
-  }
-
-
-.container{
-height: 100%;
-align-content: center;
-}
-
-.card-header h3{
-color: white;
-}
-
-.input-group-prepend span{
-width: 40px;
-background-color: #FFC312;
-color: black;
-border:0 !important;
-}
-
-input:focus{
-outline: 20 20 2 2  !important;
-box-shadow: 20 20 20 2 !important;
+  color: #000000;
 }
 
 
-/* STRUCTURE
+/* STRUCTURE */
 .wrapper {
   display: flex;
   align-items: center;
@@ -69,7 +29,7 @@ box-shadow: 20 20 20 2 !important;
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
-  background: rgb(45, 45, 46);
+  background: rgba(28, 28, 29, 0.850);
   padding: 30px;
   width: 100%;
   max-width: 450px;
@@ -78,10 +38,10 @@ box-shadow: 20 20 20 2 !important;
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: center;
-} */
+}
 
 /* TABS */
-/* h2.inactive {
+ h2.inactive {
   color: cyan;
 }
 
@@ -184,15 +144,23 @@ label {
 
 .underlineHover:hover:after{
   width: 100%;
-} */
+}
 
 
 /* OTHERS */
 
-/* *:focus {
+:focus {
     outline: none;
 }
 
 #icon {
   width:60%;
-} */
+}
+
+::placeholder{
+  color: black;
+}
+
+text{
+  color: #0d0d0d;
+}
