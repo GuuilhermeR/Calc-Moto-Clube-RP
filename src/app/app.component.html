@@ -7,16 +7,37 @@
   }
 </style>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Calculadora Moto Clube</title>
+  <base href="/">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
 <body>
-   <div class="wrapper fadeInDown">
+  <div class="wrapper fadeInDown">
     <div id="formContent">
       <form [formGroup]="calcForm">
         <div class="logo mb-3">
-          <div class="col-md-20 text-center">
-           <img src="https://media.giphy.com/media/Vk0foG0izDUXu/giphy.gif" width="100" frameBorder="0">
-           <h1>Moto Clube</h1>
+          <div class="col-md-20 text-center" id="formHeader">
+            <img src="https://media.giphy.com/media/Vk0foG0izDUXu/giphy.gif" width="120" frameBorder="0">
+            <h1>Moto Clube</h1>
           </div>
-       </div>
+          <!-- <div class="col-md-30 text-center">
+            <div class="btn-group mr-2" role="group">
+              <img src="https://media.giphy.com/media/Vk0foG0izDUXu/giphy.gif" width="80" frameBorder="0">
+            </div>
+            <div class="btn-group mr-2" role="group">
+              <h1>Moto Clube</h1>
+            </div>
+            <div class="btn-group mr-2" role="group">
+              <img src="https://media.giphy.com/media/Vk0foG0izDUXu/giphy.gif" width="80" frameBorder="0">
+            </div>
+          </div> -->
+        </div>
         <div class="form-group" style="margin-top: 10px;">
           <span tabindex="0" data-toggle="tooltip" title="Passaporte da pessoa que trouxe o veículo">
             <label for="lblPassaporte">Passaporte</label>
@@ -67,8 +88,8 @@
             </select>
           </span>
         </div>
-        <div class="form-group">
-          <div class="btn-toolbar mx-auto d-block" role="toolbar" style="text-align: right;">
+        <div class="form-group" id="formFooter">
+          <div class="btn-toolbar mx-auto d-block" role="toolbar" style="text-align: right; margin-top: 10px;">
             <!-- <div class="btn-group mr-2" role="group">
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSequencia"
                 data-whatever="@mdo">Sequencia</button>
@@ -85,6 +106,15 @@
       </form>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 <script>
