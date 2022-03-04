@@ -29,7 +29,7 @@ export class AppComponent implements OnInit{
   });
 
   ngOnInit() {
-    this.limparCampos();
+    this.LimparCampos();
   }
 
   CalcularValores(){
@@ -102,7 +102,7 @@ export class AppComponent implements OnInit{
             document.body.removeChild(selBox);
   }
 
-  limparCampos(){
+  LimparCampos(){
     this.calcForm.controls['ValorBau'].disable();
     this.calcForm.controls['ValorBau'].setValue('Baú');
     this.calcForm.controls['ValorCliente'].disable();
