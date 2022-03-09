@@ -81,12 +81,12 @@ export class AppComponent implements OnInit{
             }
             else
             {
-              Texto = '**Nº:**'
-              Texto +='\n**Passaporte:**' + this.calcForm.controls['Passaporte'].value
-              Texto +='\n**Valor Baú:**' + this.calcForm.controls['ValorBau'].value
-              Texto +='\n**Valor Cliente:**' + this.calcForm.controls['ValorCliente'].value
-              Texto +='\n**Valor Mecânico:**' + this.calcForm.controls['ValorMecanico'].value
-              Texto += '\n**Valor Total:**'  + this.calcForm.controls['ValorTotal'].value
+              Texto = '**Nº: **'
+              Texto +='\n**Passaporte: **' + this.calcForm.controls['Passaporte'].value
+              Texto +='\n**Valor Baú: **' + this.calcForm.controls['ValorBau'].value
+              Texto +='\n**Valor Cliente: **' + this.calcForm.controls['ValorCliente'].value
+              Texto +='\n**Valor Mecânico: **' + this.calcForm.controls['ValorMecanico'].value
+              Texto += '\n**Valor Total: **'  + this.calcForm.controls['ValorTotal'].value
             }
 
             const selBox = document.createElement('textarea');
