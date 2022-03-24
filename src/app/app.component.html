@@ -23,19 +23,25 @@
       <form [formGroup]="calcForm">
         <div class="logo mb-3">
           <div class="col-md-20 text-center" id="formHeader">
-            <img src="favicon.ico" width="120" frameBorder="0">
             <h1>Moto Clube</h1>
           </div>
         </div>
         <div class="form-group" style="margin-top: 10px;">
-          <span tabindex="0" data-toggle="tooltip" title="Passaporte da pessoa que trouxe o veículo">
+          <span tabindex="0" data-toggle="tooltip" title="Sequência da sua meta semanal">
+            <label for="lblSequencia">Sequência</label>
+            <input required type="number" class="form-control" id="txtSequencia" placeholder="Sequência" min="0"
+              formControlName="Sequencia">
+          </span>
+        </div>
+        <div class="form-group" style="margin-top: 10px;">
+          <span tabindex="1" data-toggle="tooltip" title="Passaporte da pessoa que trouxe o veículo">
             <label for="lblPassaporte">Passaporte</label>
             <input required type="number" class="form-control" id="txtPassaporte" placeholder="Passaporte" min="0"
               formControlName="Passaporte">
           </span>
         </div>
         <div class="form-group">
-          <span tabindex="1" data-toggle="tooltip" title="Valor total sujo">
+          <span tabindex="2" data-toggle="tooltip" title="Valor total sujo">
             <label for="lblValorTotal">Valor Total</label>
             <input type="number" class="form-control" id="txtVlrTotal" placeholder="Total" min="0"
               formControlName="ValorTotal">
@@ -58,8 +64,8 @@
             <label for="lblValorMec">Valor Mecânico</label>
             <input class="form-control" id="txtVlrMec" placeholder="Mecânico" formControlName="ValorMecanico">
           </span>
-          <span tabindex="2" data-toggle="tooltip"
-            title="Só marcar esta opção se você for Booster no nosso Discord. O mau uso é passível de exoneração (Lembre-se verificamos sempre as logs e sua meta).">
+          <span tabindex="3" data-toggle="tooltip"
+            title="Só marcar esta opção se você for Booster no nosso Discord. O mau uso é passível de exoneração (Lembre-se, verificamos sempre as logs e sua meta).">
             <input class="form-check-input" type="checkbox" value="" id="chkBoosterMec" formControlName="Booster">
             <label class="form-check-label" for="lblBooster">
               Booster
@@ -67,7 +73,7 @@
           </span>
         </div>
         <div class="form-group">
-          <span tabindex="3" data-toggle="tooltip"
+          <span tabindex="4" data-toggle="tooltip"
             title="Só marca esta opção caso o cliente informar ser parceiro (verificar canal parceiros).">
             <label for="lblParceria">Parceria</label>
             <select class="form-control" id="txtParceria" formControlName="Parceria">
@@ -91,6 +97,14 @@
         </div>
       </form>
     </div>
+    <!-- <iframe src="https://discord.com/widget?id=906430801770586132&theme=dark"
+    style="float: right;"
+    width="280"
+    height="400"
+    allowtransparency="true"
+    frameborder="0"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+    ></iframe> -->
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
